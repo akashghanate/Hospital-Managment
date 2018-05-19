@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="basePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="344.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.signin">
+   <children>
+      <ImageView fitHeight="448.0" fitWidth="345.0" layoutX="-1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/Login.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="263.0" layoutY="14.0" text="Doctor Login" />
+      <JFXToggleButton fx:id="toggle" layoutX="252.0" layoutY="14.0" onAction="#toggleaction" prefHeight="33.0" prefWidth="78.0" text="ToggleButton" toggleColor="#07d31b" unToggleColor="#999999" unToggleLineColor="BLACK" />
+      <Pane fx:id="userpane" layoutX="70.0" layoutY="144.0" prefHeight="287.0" prefWidth="251.0">
+         <children>
+            <Label fx:id="lbl" layoutX="6.0" layoutY="2.0" text="Status" />
+            <JFXTextField fx:id="usernameTF" focusColor="BLUE" layoutX="4.0" layoutY="19.0" prefHeight="32.0" prefWidth="234.0" promptText="UserName" style="-fx-border-color: #0000ff; -fx-border-radius: 5px;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="passwordTF" focusColor="BLUE" layoutX="5.0" layoutY="64.0" prefHeight="33.0" prefWidth="234.0" promptText="PassWord" style="-fx-border-color: #0000ff; -fx-border-radius: 5px;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="sigin" buttonType="RAISED" defaultButton="true" layoutX="4.0" layoutY="111.0" onAction="#sigin" prefHeight="33.0" prefWidth="234.0" ripplerFill="#6464f8" style="-fx-background-color: #0000ff; -fx-background-radius: 5px;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="56.0" layoutY="246.0" onAction="#sigup" prefHeight="33.0" prefWidth="106.0" ripplerFill="#6464f8" style="-fx-background-color: #0000ff; -fx-background-radius: 5px;" text="Signup" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="docpane" layoutX="71.0" layoutY="143.0" prefHeight="287.0" prefWidth="251.0" visible="false">
+         <children>
+            <Label fx:id="lbl1" layoutX="6.0" layoutY="2.0" text="Status 1" />
+            <JFXTextField fx:id="docname" focusColor="BLUE" layoutX="4.0" layoutY="19.0" prefHeight="32.0" prefWidth="234.0" promptText="UserName" style="-fx-border-color: #0000ff; -fx-border-radius: 5px;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="docpass" focusColor="BLUE" layoutX="5.0" layoutY="64.0" prefHeight="33.0" prefWidth="234.0" promptText="PassWord" style="-fx-border-color: #0000ff; -fx-border-radius: 5px;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="docin" buttonType="RAISED" defaultButton="true" layoutX="4.0" layoutY="111.0" onAction="#sigindoc" prefHeight="33.0" prefWidth="234.0" ripplerFill="#6464f8" style="-fx-background-color: #0000ff; -fx-background-radius: 5px;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="56.0" layoutY="246.0" onAction="#sigupdoc" prefHeight="33.0" prefWidth="106.0" ripplerFill="#6464f8" style="-fx-background-color: #0000ff; -fx-background-radius: 5px;" text="Singup" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

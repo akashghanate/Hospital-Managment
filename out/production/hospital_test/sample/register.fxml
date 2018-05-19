@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.register">
+   <children>
+      <ImageView fitHeight="438.0" fitWidth="638.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/registerpage.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="631.0">
+         <children>
+            <Pane layoutX="24.0" layoutY="22.0" opacity="0.68" prefHeight="400.0" prefWidth="579.0">
+               <children>
+                  <JFXTextField fx:id="firstName" focusColor="RED" labelFloat="true" layoutX="321.0" layoutY="50.0" prefHeight="34.0" prefWidth="229.0" promptText="First Name" style="-fx-background-color: #ffffff;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font></JFXTextField>
+                  <JFXTextField fx:id="lastName" focusColor="RED" labelFloat="true" layoutX="320.0" layoutY="96.0" prefHeight="34.0" prefWidth="229.0" promptText="Last Name" style="-fx-background-color: #ffffff;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font></JFXTextField>
+                  <JFXTextField fx:id="age" focusColor="RED" labelFloat="true" layoutX="321.0" layoutY="145.0" prefHeight="26.0" prefWidth="87.0" promptText="Age" style="-fx-background-color: #ffffff;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font></JFXTextField>
+                  <JFXTextField fx:id="birth" focusColor="RED" labelFloat="true" layoutX="422.0" layoutY="146.0" prefHeight="29.0" prefWidth="127.0" promptText="D.O.B" style="-fx-background-color: #ffffff;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font></JFXTextField>
+                  <JFXTextField fx:id="disease" focusColor="RED" labelFloat="true" layoutX="320.0" layoutY="188.0" prefHeight="25.0" prefWidth="127.0" promptText="Disease" style="-fx-background-color: #ffffff;" unFocusColor="WHITE" />
+                  <JFXTextField fx:id="bloodgrp" focusColor="RED" labelFloat="true" layoutX="455.0" layoutY="187.0" prefHeight="26.0" prefWidth="94.0" promptText="Blood Group" style="-fx-background-color: #ffffff;" unFocusColor="WHITE" />
+                  <JFXTextField fx:id="phno" focusColor="RED" labelFloat="true" layoutX="321.0" layoutY="223.0" prefHeight="26.0" prefWidth="229.0" promptText="Phone number" style="-fx-background-color: #ffffff;" unFocusColor="WHITE" />
+                  <JFXTextField fx:id="userName" focusColor="BLACK" layoutX="296.0" layoutY="262.0" prefHeight="41.0" prefWidth="268.0" promptText="Username" style="-fx-background-color: #ffffff;" unFocusColor="#51ff00">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="password" focusColor="BLACK" layoutX="296.0" layoutY="318.0" prefHeight="41.0" prefWidth="268.0" promptText="Password" style="-fx-background-color: #ffffff;" unFocusColor="#51ff00">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXButton buttonType="RAISED" defaultButton="true" layoutX="296.0" layoutY="369.0" onAction="#registerin" prefHeight="34.0" prefWidth="268.0" ripplerFill="#ff0808" style="-fx-background-color: #0000ff;" text="Register" textFill="WHITE">
+                     <effect>
+                        <DropShadow height="44.48" radius="24.705" spread="0.31" width="56.34" />
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" cancelButton="true" layoutX="7.0" layoutY="373.0" onAction="#cancelAction" prefHeight="34.0" prefWidth="94.0" ripplerFill="#1b1b1b" style="-fx-background-color: #ff0000;" text="Cancel" textFill="WHITE">
+                     <effect>
+                        <DropShadow height="44.48" radius="24.705" spread="0.31" width="56.34" />
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <effect>
+                  <InnerShadow blurType="ONE_PASS_BOX" />
+               </effect>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

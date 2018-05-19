@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="631.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.patientdetails">
+   <children>
+      <ImageView fx:id="Display" fitHeight="444.0" fitWidth="631.0" onDragDetected="#Disact" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/bk.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" cancelButton="true" layoutX="278.0" layoutY="393.0" onAction="#backaction" prefHeight="32.0" prefWidth="66.0" style="-fx-background-color: #ff0000;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" defaultButton="true" layoutX="192.0" layoutY="203.0" onAction="#Disact" prefHeight="32.0" prefWidth="246.0" ripplerFill="WHITE" style="-fx-background-color: #0000ff;" text="Display" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow height="71.41" radius="47.0025" spread="0.77" width="118.6">
+               <input>
+                  <Shadow />
+               </input>
+            </DropShadow>
+         </effect>
+      </JFXButton>
+      <AnchorPane fx:id="display" prefHeight="438.0" prefWidth="631.0" visible="false">
+         <children>
+            <ImageView fitHeight="438.0" fitWidth="652.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/display.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="password" layoutX="158.0" layoutY="159.0" prefHeight="23.0" prefWidth="144.0" style="-fx-background-color: #ffffff; -fx-background-radius: 3px;" text="Label" />
+            <Label fx:id="username" layoutX="158.0" layoutY="134.0" prefHeight="17.0" prefWidth="127.0" style="-fx-background-color: #ffffff; -fx-background-radius: 3px;" text="Label" />
+            <JFXButton buttonType="RAISED" cancelButton="true" layoutX="283.0" layoutY="392.0" onAction="#backaction" prefHeight="32.0" prefWidth="65.0" style="-fx-background-color: #ff0000;" text="Back" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="firstname" layoutX="410.0" layoutY="134.0" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: #ffffff; -fx-background-radius: 3px;" text="Label" />
+            <Label fx:id="lastname" layoutX="484.0" layoutY="134.0" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: #ffffff; -fx-background-radius: 3px;" text="Label" />
+            <Label fx:id="agel" layoutX="411.0" layoutY="157.0" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: #ffffff; -fx-background-radius: 3px;" text="Label" />
+            <Label fx:id="date" layoutX="411.0" layoutY="183.0" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: #ffffff; -fx-background-radius: 3px;" text="Label" />
+            <Label fx:id="blood" layoutX="450.0" layoutY="213.0" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: #ffffff; -fx-background-radius: 3px;" text="Label" />
+            <Label fx:id="phno" contentDisplay="CENTER" layoutX="411.0" layoutY="239.0" prefHeight="17.0" prefWidth="75.0" style="-fx-background-color: #ffffff; -fx-background-radius: 3px;" text="Label" />
+            <Label fx:id="disease" contentDisplay="CENTER" layoutX="368.0" layoutY="301.0" prefHeight="24.0" prefWidth="127.0" style="-fx-background-color: #ffffff; -fx-background-radius: 3px;" text="Label" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
